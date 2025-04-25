@@ -72,9 +72,18 @@ class ProductCard extends StatelessWidget {
                       ],
                     ),
                     Center(
-                      child: Image.network(
-                        'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/airpods-max-select-silver-202011?wid=200&hei=200&fmt=png-alpha',
+                      child: Container(
+                        width: 120,
                         height: 120,
+                        decoration: BoxDecoration(
+                          color: Colors.grey[800],
+                          shape: BoxShape.circle,
+                        ),
+                        child: const Icon(
+                          Icons.headphones,
+                          size: 60,
+                          color: Colors.white,
+                        ),
                       ),
                     ),
                     const SizedBox(height: 16),
